@@ -133,7 +133,7 @@ function renderStores(filterRegion = 'all') {
                     <span>📞</span>
                     <a href="tel:${store.phone.replace(/-/g, '')}">${store.phone}</a>
                 </div>
-                <a href="tel:${store.phone.replace(/-/g, '')}" class="btn btn-primary">전화 예약하기</a>
+                <a href="tel:${store.phone.replace(/-/g, '')}" class="btn btn-primary">전화 문의하기</a>
             </div>
         </div>
     `).join('');
