@@ -428,8 +428,8 @@ section:last-of-type {
 }
 
 .product-preview {
-    width: 350px;
-    height: 350px;
+    width: 150px;
+    height: 150px;
     background: var(--white);
     border-radius: var(--radius-xl);
     display: flex;
