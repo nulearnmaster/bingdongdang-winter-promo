@@ -1,86 +1,38 @@
-// Store Data
+// Store Data - 19개 매장
 const stores = [
-    {
-        id: 1,
-        name: "빙동댕 강남점",
-        region: "서울",
-        address: "서울시 강남구 테헤란로 123",
-        phone: "02-1234-5678",
-        emoji: "🏢"
-    },
-    {
-        id: 2,
-        name: "빙동댕 홍대점",
-        region: "서울",
-        address: "서울시 마포구 홍익로 45",
-        phone: "02-2345-6789",
-        emoji: "🎨"
-    },
-    {
-        id: 3,
-        name: "빙동댕 명동점",
-        region: "서울",
-        address: "서울시 중구 명동길 78",
-        phone: "02-3456-7890",
-        emoji: "🛍️"
-    },
-    {
-        id: 4,
-        name: "빙동댕 신촌점",
-        region: "서울",
-        address: "서울시 서대문구 신촌로 234",
-        phone: "02-4567-8901",
-        emoji: "📚"
-    },
-    {
-        id: 5,
-        name: "빙동댕 잠실점",
-        region: "서울",
-        address: "서울시 송파구 올림픽로 567",
-        phone: "02-5678-9012",
-        emoji: "🎡"
-    },
-    {
-        id: 6,
-        name: "빙동댕 분당점",
-        region: "경기",
-        address: "경기도 성남시 분당구 판교역로 89",
-        phone: "031-1234-5678",
-        emoji: "🌳"
-    },
-    {
-        id: 7,
-        name: "빙동댕 수원점",
-        region: "경기",
-        address: "경기도 수원시 영통구 광교중앙로 123",
-        phone: "031-2345-6789",
-        emoji: "🏰"
-    },
-    {
-        id: 8,
-        name: "빙동댕 일산점",
-        region: "경기",
-        address: "경기도 고양시 일산서구 중앙로 456",
-        phone: "031-3456-7890",
-        emoji: "🌸"
-    },
-    {
-        id: 9,
-        name: "빙동댕 인천구월점",
-        region: "인천",
-        address: "인천시 남동구 구월동 예술로 789",
-        phone: "032-1234-5678",
-        emoji: "⚓"
-    },
-    {
-        id: 10,
-        name: "빙동댕 송도점",
-        region: "인천",
-        address: "인천시 연수구 센트럴로 234",
-        phone: "032-2345-6789",
-        emoji: "🌊"
-    }
+    // 서울
+    { id: 1, name: "마포점", region: "서울", address: "서울 마포구 월드컵북로 73 1층", phone: "0507-1397-5682" },
+    { id: 2, name: "영등포점", region: "서울", address: "서울 영등포구 당산로16길 16-1 1층", phone: "0507-1429-5621" },
+    { id: 3, name: "종로점", region: "서울", address: "서울 종로구 종로31길 46-1, 1층", phone: "070-4012-1317" },
+    { id: 4, name: "시흥본점", region: "서울", address: "서울 관악구 봉천로 1층", phone: "0507-1367-4711" },
+    
+    // 경기
+    { id: 5, name: "안양점", region: "경기", address: "경기 안양시 만안구 안양천서로 177 1타임상가16호", phone: "031-348-4387" },
+    { id: 6, name: "분당야탑점", region: "경기", address: "경기 성남시 분당구 야탑동 321-8 102호", phone: "031-778-7712" },
+    { id: 7, name: "양주점", region: "경기", address: "경기 양주시 옥정동로 193, 1동 403호", phone: "031-868-7981" },
+    
+    // 충청
+    { id: 8, name: "대전서구점", region: "충청", address: "대전광역시 서구 도안대로 58, 1층 101호", phone: "042-710-0723" },
+    { id: 9, name: "천안신부점", region: "충청", address: "충남 천안시 동남구 봉명2길 4", phone: "070-4010-6000" },
+    { id: 10, name: "충주점", region: "충청", address: "충북 충주시 연수서림2길 11 상가7동 지하1층 108호", phone: "070-7804-1002" },
+    
+    // 전라
+    { id: 11, name: "군산점", region: "전라", address: "전북 군산시 상지곡안1길 20-2", phone: "063-468-5882" },
+    { id: 12, name: "여수학동점", region: "전라", address: "전남 여수시 학동복길 7 8층 102호", phone: "061-920-4543" },
+    { id: 13, name: "화준점", region: "전라", address: "전남 화순군 화순읍 철종로 141-7 114동 1층 119A호", phone: "070-4048-0560" },
+    
+    // 경상
+    { id: 14, name: "울산동구점", region: "경상", address: "울산 동구 봉덕5로 1층", phone: "033-912-7702" },
+    { id: 15, name: "부산사직점", region: "경상", address: "부산광역시 동래구 사직동 78-9", phone: "070-4010-1719" },
+    { id: 16, name: "영남대점", region: "경상", address: "경북 경산시 압량읍 압량2로2길 3-1 평촌역 영남대점", phone: "053-811-7779" },
+    { id: 17, name: "경주황정점", region: "경상", address: "경북 경주시 금성로 309 302동 206호", phone: "02-426-7882" },
+    { id: 18, name: "기장정관점", region: "경상", address: "부산 기장군 정관읍 솔마로 1366-3", phone: "051-715-9911" },
+    { id: 19, name: "기장칠광점", region: "경상", address: "부산 기장군 기장읍 차성로4 36번길6-2 103호", phone: "051-721-8745" }
 ];
+
+// Pagination
+let currentPage = 1;
+const itemsPerPage = 9;
 
 // Countdown Timer
 function initCountdown() {
@@ -113,16 +65,15 @@ function initCountdown() {
     setInterval(updateCountdown, 1000);
 }
 
-// Store Filtering and Display
-function renderStores(filterRegion = 'all') {
+// Render Stores with Pagination
+function renderStores(page = 1) {
     const storesGrid = document.getElementById('storesGrid');
-    const filteredStores = filterRegion === 'all' 
-        ? stores 
-        : stores.filter(store => store.region === filterRegion);
+    const startIndex = (page - 1) * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    const paginatedStores = stores.slice(startIndex, endIndex);
     
-    storesGrid.innerHTML = filteredStores.map(store => `
+    storesGrid.innerHTML = paginatedStores.map(store => `
         <div class="store-card fade-in">
-            <div class="store-image">${store.emoji}</div>
             <div class="store-info">
                 <h3 class="store-name">${store.name}</h3>
                 <div class="store-address">
@@ -133,29 +84,46 @@ function renderStores(filterRegion = 'all') {
                     <span>📞</span>
                     <a href="tel:${store.phone.replace(/-/g, '')}">${store.phone}</a>
                 </div>
-                <a href="tel:${store.phone.replace(/-/g, '')}" class="btn btn-primary">전화 문의하기</a>
+                <a href="tel:${store.phone.replace(/-/g, '')}" class="btn btn-primary store-call-btn">전화 예약하기</a>
             </div>
         </div>
     `).join('');
+    
+    renderPagination();
 }
 
-// Store Filter Buttons
-function initStoreFilter() {
-    const filterButtons = document.querySelectorAll('.filter-btn');
+// Render Pagination
+function renderPagination() {
+    const paginationContainer = document.getElementById('pagination');
+    const totalPages = Math.ceil(stores.length / itemsPerPage);
     
-    filterButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            // Remove active class from all buttons
-            filterButtons.forEach(btn => btn.classList.remove('active'));
-            
-            // Add active class to clicked button
-            button.classList.add('active');
-            
-            // Get filter region and render stores
-            const region = button.getAttribute('data-region');
-            renderStores(region);
-        });
-    });
+    let paginationHTML = '';
+    
+    // Previous button
+    if (currentPage > 1) {
+        paginationHTML += `<button class="pagination-btn" onclick="changePage(${currentPage - 1})">‹</button>`;
+    }
+    
+    // Page numbers
+    for (let i = 1; i <= totalPages; i++) {
+        paginationHTML += `<button class="pagination-btn ${i === currentPage ? 'active' : ''}" onclick="changePage(${i})">${i}</button>`;
+    }
+    
+    // Next button
+    if (currentPage < totalPages) {
+        paginationHTML += `<button class="pagination-btn" onclick="changePage(${currentPage + 1})">›</button>`;
+    }
+    
+    paginationContainer.innerHTML = paginationHTML;
+}
+
+// Change Page
+function changePage(page) {
+    currentPage = page;
+    renderStores(currentPage);
+    
+    // Scroll to stores section
+    document.getElementById('stores').scrollIntoView({ behavior: 'smooth', block: 'start' });
 }
 
 // FAQ Accordion
@@ -187,7 +155,7 @@ function initSmoothScroll() {
             const target = document.querySelector(this.getAttribute('href'));
             
             if (target) {
-                const offset = 80; // Offset for fixed headers if any
+                const offset = 80;
                 const targetPosition = target.getBoundingClientRect().top + window.pageYOffset - offset;
                 
                 window.scrollTo({
@@ -215,40 +183,25 @@ function initScrollAnimation() {
         });
     }, observerOptions);
     
-    // Observe elements that should animate on scroll
     const animateElements = document.querySelectorAll('.product-card, .solution-card, .step, .store-card, .faq-item');
     animateElements.forEach(el => {
         observer.observe(el);
     });
 }
 
-// Add phone call analytics (optional)
+// Add phone call analytics
 function trackPhoneCall(storeName) {
     console.log(`Phone call initiated to: ${storeName}`);
-    // Add analytics tracking here if needed (e.g., Google Analytics)
 }
 
 // Initialize all functions when DOM is loaded
 document.addEventListener('DOMContentLoaded', () => {
-    // Initialize countdown timer
     initCountdown();
-    
-    // Render initial stores (all stores)
-    renderStores('all');
-    
-    // Initialize store filter
-    initStoreFilter();
-    
-    // Initialize FAQ accordion
+    renderStores(1);
     initFAQ();
-    
-    // Initialize smooth scroll
     initSmoothScroll();
-    
-    // Initialize scroll animations
     initScrollAnimation();
     
-    // Add tracking to phone links
     document.addEventListener('click', (e) => {
         if (e.target.tagName === 'A' && e.target.href.startsWith('tel:')) {
             const storeCard = e.target.closest('.store-card');
@@ -262,26 +215,26 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('🎉 빙동댕 프로모션 페이지가 로드되었습니다!');
 });
 
-// Handle window resize for responsive adjustments
+// Handle window resize
 let resizeTimer;
 window.addEventListener('resize', () => {
     clearTimeout(resizeTimer);
     resizeTimer = setTimeout(() => {
-        // Add any resize-specific logic here if needed
         console.log('Window resized');
     }, 250);
 });
 
-// Prevent default form submission if forms are added later
+// Prevent default form submission
 document.addEventListener('submit', (e) => {
     e.preventDefault();
     console.log('Form submission prevented - implement form handling');
 });
 
-// Export functions for potential external use
+// Export functions
 window.BingDongDeng = {
     renderStores,
     stores,
     initCountdown,
-    initFAQ
+    initFAQ,
+    changePage
 };
