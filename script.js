@@ -1,4 +1,4 @@
-// Store Data - 19개 매장
+// Store Data - 20개 매장
 const stores = [
     // 서울
     { id: 1, name: "마포점", region: "서울", address: "서울 마포구 월드컵북로 73 1층", phone: "0507-1397-5682" },
@@ -10,6 +10,9 @@ const stores = [
     { id: 5, name: "안양점", region: "경기", address: "경기 안양시 만안구 안양천서로 177 1타임상가16호", phone: "031-348-4387" },
     { id: 6, name: "분당야탑점", region: "경기", address: "경기 성남시 분당구 야탑동 321-8 102호", phone: "031-778-7712" },
     { id: 7, name: "양주점", region: "경기", address: "경기 양주시 옥정동로 193, 1동 403호", phone: "031-868-7981" },
+
+    // 인천
+    { id: 20, name: "미추홀점", region: "인천", address: "인천 미추홀구 장천로 57, 1층", phone: "0507-1368-8395" },
 
     // 충청
     { id: 8, name: "대전서구점", region: "충청", address: "대전광역시 서구 도안대로 58, 1층 101호", phone: "042-710-0723" },
